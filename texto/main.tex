@@ -1,0 +1,33 @@
+\documentclass[12pt,oneside,a4paper]{article}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+
+\usepackage[main=portuguese,english]{babel}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, left=3cm, top=3cm, right=2.5cm, bottom=2.5cm}
+\usepackage{setspace}
+\onehalfspacing 
+
+\usepackage[backend=biber, style=abnt, indent]{biblatex}
+\addbibresource{referencias.bib}
+
+\usepackage{amsmath,amssymb,amsfonts} 
+\usepackage{booktabs}                  
+\usepackage{hyperref}                  
+\usepackage{float}   
+\usepackage{longtable}  
+
+\begin{document}
+	
+	\listoffigures
+	\listoftables
+	\tableofcontents
+	
+	\input{discussao}
+
+	\printbibliography[title={Referências}]
+	
+\end{document}

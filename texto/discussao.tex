@@ -1,0 +1,319 @@
+\section{Discussão}
+
+\subsection{Cadastro Único}
+
+Famílias por faixa de renda com cadastro atualizado no Cadastro Único: \url{https://dados.gov.br/dados/conjuntos-dados/familias-por-faixa-de-renda-com-cadastro-atualizado-no-cadastro-unico} 
+
+Pessoas inscritas no Cadastro Único: \url{https://dados.gov.br/dados/conjuntos-dados/pessoas-inscritas-no-cadastro-unico}
+
+Famílias inscritas no Cadastro Único: \url{https://dados.gov.br/dados/conjuntos-dados/familias-inscritas-no-cadastro-unico}
+
+Postos de Cadastramento do Cadastro Único: \url{https://dados.gov.br/dados/conjuntos-dados/postos-de-cadastramento-do-cadastro-unico}
+
+A sub-subseção \ref{postos_cadunico}
+
+Pessoas inscritas no Cadastro Único por faixa de renda per capita: \url{https://dados.gov.br/dados/conjuntos-dados/pessoas-inscritas-no-cadastro-unico-por-faixa-de-renda-per-capita}
+
+Famílias inscritas no Cadastro Único por faixa de renda per capita: \url{https://dados.gov.br/dados/conjuntos-dados/familias-inscritas-no-cadastro-unico-por-faixa-de-renda-per-capita}
+
+\subsubsection{Postos do Cadastro Único}
+\label{postos_cadunico}
+
+\begin{figure}[H]
+	\centering
+	\caption{Quantidade de postos do Cadastro Único}
+	\label{fig:qtdepostoscadunico}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/postos/qtde_postos_cadunico}
+	\footnotesize{Fonte: \textcite{qtde_postos_cadunico}.}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Quantidade de Postos do Cadastro Único por Região}
+	\label{tab:postos_cadunico}
+	\begin{tabular}{lrr}
+		\toprule
+		Região & Quantidade & (\%) \\
+		\midrule
+		Nordeste     & 1.587 & 44,68 \\
+		Sudeste      & 1.034 & 29,11 \\
+		Sul          &   447 & 12,58 \\
+		Norte        &   300 &  8,45 \\
+		Centro-Oeste &   184 &  5,18 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+A mediana é 447, portanto as regiões Nordeste, Sudeste e Sul estão igual ou acima da mediana.
+
+\begin{figure}[H]
+	\centering
+	\caption{Estimativa de Densidade de Kernel da Quantidade de Postos do Cadastro Único por Região}
+	\label{fig:kde_qtde_postos_cadunico_por_regiao}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/postos/kde_qtde_postos_cadunico_por_regiao}
+	\footnotesize{Fonte: Elaboração própria.}
+\end{figure}
+
+O coeficiente de assimetria é 0,97
+
+\begin{table}[H]
+	\centering
+	\caption{Quantidade de Postos do Cadastro Único por UF: Top 5}
+	\label{tab:postos_cadunico_ufs_top5}
+	\begin{tabular}{lrr}
+		\toprule
+		UF & Quantidade & (\%) \\
+		\midrule
+		SP & 482 & 13,57 \\
+		BA & 445 & 12,53 \\
+		MG & 435 & 12,25 \\
+		CE & 208 & 5,86 \\
+		MA & 207 & 5,83 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Quantidade de Postos do Cadastro Único por UF: Bottom 5}
+	\label{tab:postos_cadunico_ufs_bottom5}
+	\begin{tabular}{lrr}
+		\toprule
+		UF & Quantidade & (\%) \\
+		\midrule
+		MS & 22 & 0,62 \\
+		DF & 18 & 0,51 \\
+		RO & 13 & 0,37 \\
+		AP & 12 & 0,34 \\
+		RR & 12 & 0,34 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\caption{Estimativa de Densidade de Kernel da Quantidade de Postos do Cadastro Único por UF}
+	\label{fig:kde_qtde_postos_cadunico_por_uf}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/postos/kde_qtde_postos_cadunico_por_uf}
+	\footnotesize{Fonte: Elaboração própria.}
+\end{figure}
+
+Coeficiente de assimetria: 1,53
+
+A mediana é 96. Igual ou maior que a mediana: 14 UF.
+
+\begin{longtable}{lrr}
+	\caption{Quantidade de Postos do Cadastro Único por UF: Quantidade acima ou igual da mediana} \label{tab:postos_uf_qtde_acima_igual_mediana} \\
+	\toprule
+	UF & Quantidade & (\%) \\
+	\midrule
+	\endfirsthead
+	\toprule
+	UF & Quantidade & (\%) \\
+	\midrule
+	\endhead
+	\midrule
+	\multicolumn{3}{r}{\small{Continua na próxima página}} \\
+	\midrule
+	\endfoot
+	\bottomrule
+	\endlastfoot
+	SP & 482 & 13,57 \\
+	BA & 445 & 12,53 \\
+	MG & 435 & 12,25 \\
+	CE & 208 &  5,86 \\
+	MA & 207 &  5,83 \\
+	PE & 204 &  5,74 \\
+	PB & 195 &  5,49 \\
+	RS & 182 &  5,12 \\
+	SC & 169 &  4,76 \\
+	RN & 152 &  4,28 \\
+	PA & 123 &  3,46 \\
+	GO & 114 &  3,21 \\
+	AL & 103 &  2,90 \\
+	PR &  96 &  2,70 \\
+\end{longtable}
+
+\subsubsection{Pessoas e Famílias Cadastradas no Cadastro Único}
+\label{pessoas_familias_cadunico}
+
+\textcite{pessoas_cadunico, familias_cadunico}
+
+\begin{figure}
+	\centering
+	\caption{Quantidade de Famílias no Cadastro Único: Centro-Oeste}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/familias_cadunico_ufs_centro-oeste}
+	\label{fig:familiascadunicoufscentro-oeste}
+	\footnotesize{Fonte: \textcite{pessoas_cadunico, familias_cadunico}.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\caption{Quantidade de Famílias no Cadastro Único: Nordeste}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/familias_cadunico_ufs_nordeste}
+	\label{fig:familiascadunicoufsnordeste}
+	\footnotesize{Fonte: \textcite{pessoas_cadunico, familias_cadunico}.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\caption{Quantidade de Famílias no Cadastro Único: Norte}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/familias_cadunico_ufs_norte}
+	\label{fig:familiascadunicoufsnorte}
+	\footnotesize{Fonte: \textcite{pessoas_cadunico, familias_cadunico}.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\caption{Quantidade de Famílias no Cadastro Único: Sudeste}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/familias_cadunico_ufs_sudeste}
+	\label{fig:familiascadunicoufssudeste}
+	\footnotesize{Fonte: \textcite{pessoas_cadunico, familias_cadunico}.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\caption{Quantidade de Famílias no Cadastro Único: Sul}
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/familias_cadunico_ufs_sul}
+	\label{fig:familiascadunicoufssul}
+	\footnotesize{Fonte: \textcite{pessoas_cadunico, familias_cadunico}.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pct_qtde_pessoas_no_cadunico_na_populacao_por_ano}
+	\caption{}
+	\label{fig:pctqtdepessoasnocaduniconapopulacaoporano}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_cadunico_ufs_centro-oeste}
+	\caption{}
+	\label{fig:pessoascadunicoufscentro-oeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_cadunico_ufs_nordeste}
+	\caption{}
+	\label{fig:pessoascadunicoufsnordeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_cadunico_ufs_norte}
+	\caption{}
+	\label{fig:pessoascadunicoufsnorte}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_cadunico_ufs_sudeste}
+	\caption{}
+	\label{fig:pessoascadunicoufssudeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_cadunico_ufs_sul}
+	\caption{}
+	\label{fig:pessoascadunicoufssul}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_familias_cadunico}
+	\caption{}
+	\label{fig:pessoasfamiliascadunico}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_familias_cadunico_centro-oeste}
+	\caption{}
+	\label{fig:pessoasfamiliascadunicocentro-oeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_familias_cadunico_nordeste}
+	\caption{}
+	\label{fig:pessoasfamiliascaduniconordeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_familias_cadunico_norte}
+	\caption{}
+	\label{fig:pessoasfamiliascaduniconorte}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_familias_cadunico_sudeste}
+	\caption{}
+	\label{fig:pessoasfamiliascadunicosudeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_familias_cadunico_sul}
+	\caption{}
+	\label{fig:pessoasfamiliascadunicosul}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_regiao}
+	\caption{}
+	\label{fig:pessoasnocadunicoporregiao}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_centro-oeste}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaocentro-oeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_nordeste}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaonordeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_nordeste_1}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaonordeste1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_nordeste_2}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaonordeste2}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_nordeste_3}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaonordeste3}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_norte}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaonorte}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_norte_1}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaonorte1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_norte_2}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaonorte2}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_sudeste}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaosudeste}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../analises/cad_unico/pessoas_familias/pessoas_no_cadunico_por_ufs_na_regiao_sul}
+	\caption{}
+	\label{fig:pessoasnocadunicoporufsnaregiaosul}
+\end{figure}
